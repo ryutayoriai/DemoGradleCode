@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html" />
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Getting Started: Saving Web Content</title>
+</head>
+<body>
+    <p>Testテーブル</p>
+    <ul>
+        <li th:each="sample : ${list}"> [[${sample.id}]] : [[${sample.name}]]</li>
+    </ul>
+</body>
+</html>
